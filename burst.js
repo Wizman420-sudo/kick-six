@@ -1,5 +1,5 @@
 (function(root){'use strict';
-const VERSION='burst-rank-v8';
+const VERSION='finale-rank-v9';
 function create(level){return (level.bursts||[]).map(g=>({...g,taps:[],last:[-Infinity,-Infinity],settled:false,points:0}));}
 function active(gates,t){return gates.find(g=>!g.settled&&t>=g.start&&t<g.end);}
 function multiplier(n){return Math.min(3,1+Math.floor(n/8)*.25);}
